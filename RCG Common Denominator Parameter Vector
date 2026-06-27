@@ -52,7 +52,6 @@ Key advantage:
   • A_Q, A_D set low-ℓ TT, then fix α₁, α₂ via (k_Q, k_D),
     and feed TB/EB via (γ_Π, ε_Π), all with the same axis û.
 
-
 Relaxed Hierarchical Module
 =============================
 RCG doesn’t require a single rigid global fit of the full CDP vector. 
