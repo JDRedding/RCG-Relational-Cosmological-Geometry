@@ -1,0 +1,35 @@
+RCG GEOMETRY FLOW: OPERATOR → Q-BOUNDARY MODE → SCREENING
+=========================================================
+
+Relational densities:
+    ρ₊(x), ρ₋(x)
+      ↓
+    Δρ(x) = ρ₊ - ρ₋
+    τ(x)  = ρ₊ + ρ₋
+
+Geometry operator:
+    G Ψ(x) = -∇²Ψ(x) + μ Δρ(x) Ψ(x) + ν (û · ∇Ψ(x))
+      ↓  (solve eigenproblem)
+    G Ψ₀ = λ₀ Ψ₀
+
+Boundary projection (last-scattering surface):
+    Ψ₀(χ_*, n^)  →  M_{2,3}(n^)
+      ↓
+    Q-boundary mode:
+        aligned quadrupole–octopole
+        preferred cosmic axis (Axis of Evil)
+
+---------------------------------------------------------
+
+Screening and finite-range coupling:
+    d_s(x) = d₀ exp[ -α Δρ(x) / τ(x) ]
+      ↓
+    G(d; x) = exp( -d / d_s(x) )
+      ↓
+    Angular kernel:
+        K(θ) = ∫ dχ W(χ) exp[ -d(χ,θ) / d_s(χ,n^) ]
+
+Effect on observables:
+    • finite correlation range on the sky
+    • suppression of large-angle CMB correlations
+    • same d_s controls anomaly sector and consistency bounds
