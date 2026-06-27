@@ -13,7 +13,7 @@ Data sets:
   • Planck low-ℓ TT          		→ constrains (A_Q, A_D, μ, ν, α, d₀)
   • Planck lensing φ         		→ constrains (k_Q, k_D, A_Q, A_D)
   • Planck EB/TB             		→ constrains (γ_Π, ε_Π, A_Q, axis û)
-  • Planck polarization maps 	→ cross-checks A_Q, A_D, γ_Π, ε_Π
+  • Planck polarization maps 		→ cross-checks A_Q, A_D, γ_Π, ε_Π
   • ACT/SPT lensing          		→ refines (k_Q, k_D, A_Q, A_D)
 
 Common denominator:
