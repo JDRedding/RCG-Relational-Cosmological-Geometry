@@ -123,6 +123,72 @@ So:
     detection of TB/EB with preferred-axis alignment and covariance with low-ℓ T anomalies
     is a smoking-gun signature for RCG + chiral gravity.
 
+LOW-ℓ SCALING BEHAVIOR (RCG + CHIRAL GRAVITY)
+=============================================
+
+Given:
+    a_{ℓm}^{T,Π} ∝ γ_Π ⟨ Y_{ℓm}, Π M_{2,3} ⟩
+    a_{ℓm}^{B,Π} ∝ ε_Π ⟨ {}_2Y_{ℓm}, Π M_{2,3} ⟩
+
+Parity-odd spectra:
+    C_ℓ^{TB} = (1/(2ℓ+1)) Σ_m Re[ a_{ℓm}^{T,Π} (a_{ℓm}^{B,Π})* ]
+    C_ℓ^{EB} = (1/(2ℓ+1)) Σ_m Re[ a_{ℓm}^{E,Π} (a_{ℓm}^{B,Π})* ]
+
+Low-ℓ structure:
+    • Π M_{2,3} has spectral support at ℓ = 2,3
+    • negligible power for ℓ > ℓ_c ≈ 30
+
+Scaling:
+    C_ℓ^{TB} ∼ γ_Π ε_Π |M_{2,3}|^2 S_ℓ^{TB}
+    C_ℓ^{EB} ∼ E_Π ε_Π |M_{2,3}|^2 S_ℓ^{EB}
+
+Where:
+    S_ℓ^{TB}, S_ℓ^{EB} are geometric overlap factors.
+
+Behavior:
+    • peak at ℓ = 2–3
+    • rapid suppression for ℓ > 30
+    • amplitude ∝ γ_Π ε_Π and tied to A_Q via boundary dynamics
+
+Interpretation:
+    TB/EB at low ℓ are a “chiral echo” of the Q-boundary mode.
+
+
+PLANCK CONSTRAINTS ON PARITY-ODD SIGNALS
+========================================
+
+ΛCDM baseline:
+    C_ℓ^{TB} = 0
+    C_ℓ^{EB} = 0
+    (no parity violation or birefringence)
+
+Planck observations:
+    • TB/EB consistent with zero within uncertainties
+    • small but non-zero cosmic birefringence angle:
+          β ≈ 0.3°  (≈ 3–4σ depending on dataset)
+    • no evidence for large-scale parity-odd power
+
+Implications for RCG + chiral gravity:
+    • predicted TB/EB must satisfy:
+          |C_ℓ^{TB}|, |C_ℓ^{EB}| ≪ C_ℓ^{TT}, C_ℓ^{EE}
+    • strongest constraints at ℓ = 2–3 (where RCG predicts peaks)
+    • requires:
+          |γ_Π ε_Π|  small enough to remain within Planck bounds
+
+Directional test:
+    • any real TB/EB signal must align with:
+          – Axis of Evil
+          – Q-boundary mode M_{2,3}
+    • amplitude must correlate with A_Q and A_D
+
+Key discriminator:
+    ΛCDM → no preferred-axis TB/EB
+    RCG+chiral → axis-aligned, low-ℓ localized TB/EB with amplitude tied to anomaly sector
+
+Thus:
+    Planck constraints bound γ_Π ε_Π
+    Future detection of axis-aligned TB/EB would strongly favor RCG + chiral gravity.
+
 =========================================================
 See also: 
 CHIRAL ISW CONTRIBUTION 
