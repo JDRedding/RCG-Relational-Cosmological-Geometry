@@ -1,0 +1,41 @@
+PARITY-ODD POWER SPECTRA (TB, EB) IN RCG + CHIRAL GRAVITY
+=========================================================
+
+Temperature multipoles:
+    a_{ℓm}^T =
+        a_{ℓm}^{T,iso}
+      + a_{ℓm}^{T,Q}
+      + a_{ℓm}^{T,D}
+      + a_{ℓm}^{T,Π}
+
+Chiral temperature piece:
+    a_{ℓm}^{T,Π} ∝ γ_Π ⟨ Y_{ℓm}, Π M_{2,3} ⟩
+
+Polarization multipoles:
+    a_{ℓm}^E, a_{ℓm}^B
+
+Chiral B-mode sourcing:
+    a_{ℓm}^{B,Π} ∝ ε_Π ⟨ {}_2Y_{ℓm}, Π M_{2,3} ⟩
+
+    where:
+        ε_Π = strength of chiral coupling into B-modes
+
+Parity-odd spectra:
+
+    C_ℓ^{TB} =
+        (1 / (2ℓ + 1)) Σ_m
+            Re[ a_{ℓm}^{T,Π} (a_{ℓm}^{B,Π})* ]
+
+    C_ℓ^{EB} =
+        (1 / (2ℓ + 1)) Σ_m
+            Re[ a_{ℓm}^{E,Π} (a_{ℓm}^{B,Π})* ]
+
+Structurally:
+    C_ℓ^{TB}, C_ℓ^{EB} ∼
+        f_ℓ( A_Q, A_D, γ_Π, ε_Π ; Π M_{2,3}, d^ )
+
+    i.e. they are determined by:
+        • low-ℓ anomaly amplitudes A_Q, A_D
+        • chiral ISW amplitude γ_Π
+        • chiral polarization coupling ε_Π
+        • geometry of Π M_{2,3} and preferred direction d^
