@@ -54,26 +54,36 @@ Relaxed Hierarchical Module
 =============================
 RCG doesn’t require a single rigid global fit of the full CDP vector. 
 
-Structured Flexibility Options
 
-Approach		  Description				When to Use		Risk / Trade-off	
+                     RCG — STRUCTURED FLEXIBILITY OPTIONS 
+-------------------   --------------------------------------------   -------------------------------
+Approach              Description                                   When to Use
+-------------------   --------------------------------------------   -------------------------------
+Strict Global Fit     One single vector 𝒑 constrained by all        Best-case scenario; strongest
+                      datasets simultaneously.                       confirmation of unified RCG.
 
-Strict Global Fit	  One single vector p constrained	Best-case scenario,	High risk of tension
-			   by all datasets simultaneously	 strong confirmation 	
+Sector-wise           Split 𝒑 into sub-vectors:                     When one sector is poorly
+                      {geom, boundary, lensing, chiral}.             constrained or noisy.
 
-Sector-wise		 Split into sub-vectors: geom,		When one sector is	Loses some predictive power
-			   boundary, lensing, chiral		 poorly constrained		
+Hierarchical Fitting  Step 1: Fit low-ℓ TT + lensing → fix          Most practical starting point;
+                      {μ, ν, α, d₀, A_Q, A_D, û, k_Q, k_D}.          preserves predictive structure.
+                      Step 2: Add chiral sector.
 
-Hierarchical Fitting	Fit low-ℓ TT + lensing first		Most practical		Needs careful propagation of errors
-			 → fix core geometry & boundary	 	 starting point
-			 → then add chiral			
-								 			
-Relaxed Closures	Allow perturbative extensions	 	If TB/EB tension	Reduces elegance but increases realism
-			 (e.g. chiral strength ε_Π not		 appears
-			 strictly tied to A_Q)			
-											
-Effective Parameters	Absorb mismatches into effective	Intermediate step       Can hide deeper issues
-			 k_Q, k_D, γ_Π as free within bounds	 before full revision		
+Relaxed Closures      Allow perturbative decoupling (e.g.,          If TB/EB tension appears or
+                      ε_Π not strictly tied to A_Q).                 chiral sector needs freedom.
+
+Effective Parameters  Absorb mismatches into effective              Intermediate step before full
+                      {k_Q, k_D, γ_Π} within bounds.                 revision; diagnostic tool.
+
+--------------------------------------------------------------------------------
+Risk / Trade-off
+----------------
+Strict Global Fit     High risk of tension; may overconstrain model.
+Sector-wise           Loses some predictive power; weaker cross-links.
+Hierarchical Fitting  Requires careful propagation of uncertainties.
+Relaxed Closures      Reduces elegance; increases model complexity.
+Effective Parameters  Can hide deeper structural issues if overused.
+================================================================================	
 
 Strategy
 ========
