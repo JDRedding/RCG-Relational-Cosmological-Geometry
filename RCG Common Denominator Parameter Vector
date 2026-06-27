@@ -1,4 +1,10 @@
-RCG Common Denominator Parameter Vector
+RCG Common Denominator Parameter (CDP) Vector
+---
+The framework is robust precisely because it allows both strict closure (ideal case)
+and controlled relaxation (realistic case).
+
+SINGLE UNIFIED CDP
+=================
 
 All major datasets constrain overlapping subsets of the same underlying parameter vector.
 A highly constrained system with strong cross-predictions and clear falsification criteria.
@@ -29,7 +35,7 @@ Planck Polarization (EE, TE)	A_Q, A_D, γ_Π, ε_Π			Consistency of low-ℓ mod
 ACT / SPT lensing			k_Q, k_D, A_Q, A_D  (note_0)		Refines lensing modulation	
 
 Common Denominator Principle
-
+=============================
 All observables are different transfer functions of the same
 underlying structures: Δρ, M_{2,3}, K(θ), Π.
 
@@ -42,6 +48,47 @@ Key advantage:
   • Parameters are tightly cross-linked, not independent.
   • A_Q, A_D set low-ℓ TT, then fix α₁, α₂ via (k_Q, k_D),
     and feed TB/EB via (γ_Π, ε_Π), all with the same axis û.
+
+
+Relaxed Hierarchical Module
+=============================
+RCG doesn’t require a single rigid global fit of the full CDP vector. 
+
+Structured Flexibility Options
+
+Approach		        Description				                    When to Use		            Risk / Trade-off	
+
+Strict Global Fit	  One single vector p constrained		      Best-case scenario,	    High risk of tension
+			               by all datasets simultaneously		       strong confirmation 	
+
+Sector-wise		      Split into sub-vectors: geom,		        When one sector is	    Loses some predictive power
+			               boundary, lensing, chiral		           poorly constrained		
+
+Hierarchical Fitting	Fit low-ℓ TT + lensing first 		      Most practical		      Needs careful propagation of errors
+			                 → fix core geometry & boundary		     starting point
+			                 → then add chiral			
+								 			
+Relaxed Closures	    Allow perturbative extensions		      If TB/EB tension	      Reduces elegance but increases realism
+			                 (e.g. chiral strength ε_Π not		     appears
+			                  strictly tied to A_Q)			
+											
+Effective Parameters	Absorb mismatches into effective	    Intermediate step       Can hide deeper issues
+			                 k_Q, k_D, γ_Π as free within bounds	 before full revision		
+
+Strategy
+========
+Stage 1 (Core): 
+Fit low-ℓ TT + Planck lensing
+→ Fix p_geom + p_boundary + p_lensing = {μ, ν, α, d₀, A_Q, A_D, û, k_Q, k_D}
+
+Stage 2 (Chiral test): 
+Using the fixed core, predict γ_Π and ε_Π range and confront with TB/EB + polarization
+→ Either:
+It fits naturally 	→ strong success
+It needs relaxation 	→ introduce a chiral decoupling factor (e.g. f_chiral ∈ [0.5, 2.0])
+
+Stage 3 (Cross-check): 
+Use ACT/SPT lensing + full polarization maps as independent validation.
 
 ---
 Note_0: higher resolution
