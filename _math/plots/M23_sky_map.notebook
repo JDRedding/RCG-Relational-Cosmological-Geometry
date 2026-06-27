@@ -1,1 +1,48 @@
 
+import numpy as np
+import matplotlib.pyplot as plt
+from healpy import mollview, pix2ang, ang2pix
+import healpy as hp
+
+# ============== RCG Q-Boundary Mode M_{2,3} Visualization ==============
+
+# Parameters
+NSIDE = 64
+nside = NSIDE
+npix = hp.nside2npix(nside)
+
+# Create a simple toy M_{2,3} mode aligned with Axis of Evil
+# Approximate as a combination of Y_2,0 and Y_3,0 with alignment along galactic (l,b) ~ (260°, 130°)
+theta0 = np.deg2rad(90 - 130)   # colatitude of preferred axis
+phi0   = np.deg2rad(260)        # longitude
+
+# Generate pixel coordinates
+theta, phi = hp.pix2ang(nside, np.arange(npix))
+
+# Simple analytic approximation of aligned quadrupole + octopole
+# (cosine of angle to preferred axis)
+cos_gamma = np.sin(theta) * np.sin(theta0) * np.cos(phi - phi0) + np.cos(theta) * np.cos(theta0)
+
+M23 = 0.6 * (3 * cos_gamma**2 - 1) + 0.4 * (5 * cos_gamma**3 - 3 * cos_gamma)   # toy combination
+
+# Normalize
+M23 = M23 / np.std(M23)
+
+# ====================== Plot ======================
+plt.figure(figsize=(10, 6))
+
+mollview(M23, 
+         title="RCG Q-Boundary Mode M_{2,3}(n̂)\n(Aligned Quadrupole–Octopole)",
+         cmap='RdBu_r',
+         unit=r"$\delta T/T$ (arbitrary units)",
+         min=-3, max=3,
+         nest=False)
+
+plt.text(0.05, 0.92, "Preferred Axis û (Axis of Evil)", 
+         transform=plt.gca().transAxes, color='white', fontsize=11,
+         bbox=dict(facecolor='black', alpha=0.6))
+
+plt.show()
+
+# Optional: save
+# plt.savefig("RCG_M23_Mollweide.png", dpi=300, bbox_inches='tight')
