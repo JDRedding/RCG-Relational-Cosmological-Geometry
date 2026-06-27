@@ -1,6 +1,12 @@
 PARITY-ODD POWER SPECTRA (TB, EB) IN RCG + CHIRAL GRAVITY
+
+    • definitions of a_{ℓm}^{T,Π}, a_{ℓm}^{E/B,Π}
+    • TB, EB formulas
+    • LOW-ℓ SCALING BLOCK  << insert here
+    • COVARIANCE BLOCK     << insert here
+    • predictions
+
 =========================================================
-See: CHIRAL ISW CONTRIBUTION https://github.com/JDRedding/RCG-Relational-Cosmological-Geometry/blob/main/CHIRAL%20ISW%20CONTRIBUTION
 
 Temperature multipoles:
     a_{ℓm}^T =
@@ -116,3 +122,9 @@ Key prediction:
 So:
     detection of TB/EB with preferred-axis alignment and covariance with low-ℓ T anomalies
     is a smoking-gun signature for RCG + chiral gravity.
+
+=========================================================
+See also: 
+CHIRAL ISW CONTRIBUTION 
+https://github.com/JDRedding/RCG-Relational-Cosmological-Geometry/blob/main/CHIRAL%20ISW%20CONTRIBUTION
+
