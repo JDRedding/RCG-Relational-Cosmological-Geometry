@@ -75,3 +75,44 @@ Thus:
     low-ℓ TB/EB ≈ “chiral echo” of the quadrupole–octopole alignment,
     with amplitude ∝ γ_Π ε_Π and shape fixed by M_{2,3}.
 
+COVARIANCE BETWEEN PARITY-ODD SPECTRA AND TEMPERATURE ANOMALIES
+===============================================================
+
+Relevant quantities:
+    • A_Q  = amplitude of Q-boundary mode in T
+    • A_D  = amplitude of hemispherical asymmetry in T
+    • γ_Π  = chiral ISW amplitude
+    • ε_Π  = chiral polarization coupling
+
+Temperature anomaly sector:
+    T(n^) = T_iso(n^) + A_Q M_{2,3}(n^) + A_D (d^ · n^)
+
+Chiral TB/EB sector:
+    C_ℓ^{TB} = (1 / (2ℓ + 1)) Σ_m Re[ a_{ℓm}^{T,Π} (a_{ℓm}^{B,Π})* ]
+    C_ℓ^{EB} = (1 / (2ℓ + 1)) Σ_m Re[ a_{ℓm}^{E,Π} (a_{ℓm}^{B,Π})* ]
+
+Covariance structure (schematic):
+
+    Cov( A_Q, C_ℓ^{TB} ) ∝
+        ⟨ M_{2,3}, Π M_{2,3} ⟩ γ_Π ε_Π
+
+    Cov( A_Q, C_ℓ^{EB} ) ∝
+        ⟨ M_{2,3}, Π M_{2,3} ⟩ E_Π ε_Π
+
+    Cov( A_D, C_ℓ^{TB/EB} ) ∝
+        directional overlap between d^ and Π M_{2,3}
+
+Interpretation:
+    • stronger quadrupole–octopole alignment (larger A_Q) → larger correlated TB/EB
+    • stronger hemispherical asymmetry (larger A_D) → directional modulation of TB/EB
+    • all four parameters (A_Q, A_D, γ_Π, ε_Π) tied by RCG boundary dynamics
+
+Key prediction:
+    • nonzero TB/EB must:
+        – align with Axis of Evil / Q-boundary mode
+        – correlate with measured A_Q, A_D
+    • ΛCDM baseline: C_ℓ^{TB} = C_ℓ^{EB} = 0 (no such covariance)
+
+So:
+    detection of TB/EB with preferred-axis alignment and covariance with low-ℓ T anomalies
+    is a smoking-gun signature for RCG + chiral gravity.
