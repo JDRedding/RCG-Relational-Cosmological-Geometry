@@ -27,12 +27,15 @@ Core Parameter Set 𝒑
 
 How Each Dataset Constrains 𝒑
 
-Dataset				Primary Constraints			Secondary / Cross-checks
-Planck low-ℓ TT (ℓ≤30)		 A_Q, A_D, μ, ν, α, d₀, û		 Axis direction û
-Planck lensing (φ)		 k_Q, k_D, A_Q, A_D (via α₁, α₂)	 Overall amplitude consistency
-Planck EB / TB			 γ_Π, ε_Π, A_Q, û			 Chiral strength & axis alignment
-Planck Polarization (EE, TE)	 A_Q, A_D, γ_Π, ε_Π			 Consistency of low-ℓ modes	
-ACT / SPT lensing		 k_Q, k_D, A_Q, A_D  (note_0)		 Refines lensing modulation	
+                            DATASET CONSTRAINS THE CDP VECTOR 𝒑
+-------------------------   -------------------------------------   --------------------------------------------
+Dataset                     Primary Constraints                     Secondary / Cross‑Checks
+-------------------------   -------------------------------------   --------------------------------------------
+Planck low‑ℓ TT (ℓ ≤ 30)   A_Q, A_D, μ, ν, α, d₀, û                Axis direction û
+Planck lensing φ           k_Q, k_D, A_Q, A_D  (via α₁, α₂)        Overall amplitude consistency
+Planck TB / EB             γ_Π, ε_Π, A_Q, û                        Chiral strength & axis alignment
+Planck EE / TE             A_Q, A_D, γ_Π, ε_Π                      Consistency of low‑ℓ polarization modes
+ACT / SPT lensing          k_Q, k_D, A_Q, A_D (note_0)	           Refines lensing modulation (higher resolution)
 
 Common Denominator Principle
 =============================
@@ -101,5 +104,8 @@ Stage 3 (Cross-check):
 Use ACT/SPT lensing + full polarization maps as independent validation.
 
 ---
+Notes:
+  • All datasets probe overlapping subsets of the same CDP vector 𝒑.
+  • Cross‑checks enforce axis alignment, amplitude consistency, and chiral bounds.
+  • This table is designed for direct inclusion in THEORY_MAP.md or CDP_VECTOR.ASCII.
 Note_0: higher resolution
-
