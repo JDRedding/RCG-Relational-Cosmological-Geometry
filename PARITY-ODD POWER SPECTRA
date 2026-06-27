@@ -40,3 +40,38 @@ Structurally:
         • chiral ISW amplitude γ_Π
         • chiral polarization coupling ε_Π
         • geometry of Π M_{2,3} and preferred direction d^
+
+LOW-ℓ SCALING OF PARITY-ODD SPECTRA (TB, EB) IN RCG + CHIRAL GRAVITY
+====================================================================
+
+Assume:
+    • low-ℓ temperature anomalies dominated by Q-boundary mode M_{2,3} and dipole gradient
+    • chiral sourcing tied to same boundary structure via Π M_{2,3}
+
+Temperature:
+    a_{ℓm}^{T,Π} ∼ γ_Π ⟨ Y_{ℓm}, Π M_{2,3} ⟩
+
+Polarization:
+    a_{ℓm}^{B,Π} ∼ ε_Π ⟨ {}_2Y_{ℓm}, Π M_{2,3} ⟩
+    a_{ℓm}^{E,Π} ∼ E_Π ⟨ {}_2Y_{ℓm}, Π M_{2,3} ⟩   (E_Π some chiral E-coupling)
+
+Then for ℓ ≲ 30:
+
+    • support concentrated near ℓ ≈ 2–3 (Q-boundary mode) and low-ℓ tail
+    • approximate scaling:
+
+        C_ℓ^{TB} ∝ γ_Π ε_Π |M_{2,3}|^2  S_ℓ^{TB}
+        C_ℓ^{EB} ∝ E_Π ε_Π |M_{2,3}|^2 S_ℓ^{EB}
+
+    where:
+        S_ℓ^{TB}, S_ℓ^{EB} encode geometric overlap of Π M_{2,3} with spin-2 harmonics
+
+Key low-ℓ behavior:
+    • C_ℓ^{TB}, C_ℓ^{EB} peak at ℓ ≈ 2–3
+    • fall off rapidly for ℓ > ℓ_c ≈ 30 (same spectral cutoff as M_{2,3})
+    • angular dependence modulated along Axis of Evil / Q-boundary direction
+
+Thus:
+    low-ℓ TB/EB ≈ “chiral echo” of the quadrupole–octopole alignment,
+    with amplitude ∝ γ_Π ε_Π and shape fixed by M_{2,3}.
+
