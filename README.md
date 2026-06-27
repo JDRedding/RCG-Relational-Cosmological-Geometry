@@ -1,6 +1,6 @@
 # RCG — Relational Cosmological Geometry
 
-A geometric-relational framework for the large-scale CMB anomalies
+A geometric-relational framework for the large-scale CMB anomalies  
 See `THEORY_MAP.md` for a compact ASCII diagram of the full RCG pipeline
 from relational densities to observables and predictions.
 
