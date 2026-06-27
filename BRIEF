@@ -1,0 +1,76 @@
+================================================================================
+                    RCG — Relational Cosmological Geometry
+================================================================================
+
+ABSTRACT
+--------------------------------------------------------------------------------
+Relational Cosmological Geometry (RCG) treats large-scale CMB structure as
+emerging from relational densities ρ₊ and ρ₋ via the geometry operator 𝓖 and
+screening length d_s. It provides a unified geometric origin for the low-ℓ
+anomalies (quadrupole-octopole alignment, hemispherical asymmetry, power
+deficit, lack of large-angle correlation, parity asymmetry, Cold Spot) without
+extra parameters. The same fit to low-ℓ temperature determines lensing
+modulation α₁, α₂ and other signatures.
+
+================================================================================
+CORE COMPONENTS
+================================================================================
+
+1. Relational Densities
+   Δρ(x) = ρ₊(x) - ρ₋(x)          (imbalance)
+   τ(x)  = ρ₊(x) + ρ₋(x)          (total tension)
+
+2. Geometry Operator
+   𝓖 Ψ = -∇²Ψ + μ Δρ(x) Ψ + ν (û · ∇Ψ)
+   Lowest eigenmode: 𝓖 Ψ₀ = λ₀ Ψ₀
+   Boundary projection: M_{2,3}(n̂) = Ψ₀(χ_*, n̂)   ← Q-boundary mode
+
+3. Screening Length
+   d_s(x) = d₀ exp[-α Δρ(x)/τ(x)]
+
+4. Propagator & Kernel
+   G(d;x) = exp(-d / d_s(x))
+   K(θ) = ∫ dχ W(χ) exp(-d(χ,θ) / d_s(χ,n̂))
+
+5. Low-ℓ Temperature Field
+   T(n̂) = T_iso(n̂) + A_Q M_{2,3}(n̂) + A_D (d̂ · n̂)
+
+6. Lensing Potential (Closure)
+   φ(n̂) = φ_iso + β_Q M_{2,3}(n̂) + β_D (d̂ · n̂)
+   with β_Q = k_Q A_Q , β_D = k_D A_D
+   → C_L^{φφ}(n̂) = C_L^{φφ,iso} [1 + α₁ Y_{1m}(n̂) + α₂ Y_{2m}(n̂)]
+
+7. Cold Spot
+   Localized ρ₋ defect (Δρ << 0) → short d_s → tension scar
+
+================================================================================
+FULL PIPELINE
+================================================================================
+
+Step 1: Fit A_Q, A_D, d̂ to observed low-ℓ a_{ℓm}^T (ℓ ≤ 30)
+Step 2: Solve 𝓖Ψ₀ = λ₀Ψ₀ → M_{2,3}(n̂)
+Step 3: Compute d_s → K(θ)
+Step 4: Derive α₁ ∝ k_D A_D , α₂ ∝ k_Q A_Q
+Step 5: Compute ISW contributions from same A_Q, A_D
+Step 6: Enforce bounds:
+       |α₁|, |α₂| ≲ 0.01
+       |ΔC_ℓ^{TT}/C_ℓ^{TT}| ≪ 0.01 for ℓ > 100
+       Weak κ, subtle EE/EB around Cold Spot
+
+================================================================================
+COMPACT SUMMARY
+================================================================================
+
+Low-ℓ CMB = global Q-boundary mode M_{2,3}
+          + ∇(ρ₊/ρ₋) gradient
+          + spectral gap
+          + Π-chiral spectrum
+          + D_ρ₋ defect (Cold Spot)
+
+All generated from single operator 𝓖 and screening d_s(Δρ/τ).
+Fit low-ℓ T → predicts lensing α₁,α₂, polarization, ISW, high-ℓ residuals
+with no extra parameters.
+
+================================================================================
+END OF RCG DOCUMENT
+================================================================================
