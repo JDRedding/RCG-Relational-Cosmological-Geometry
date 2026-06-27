@@ -1,0 +1,55 @@
+                    RCG : Relational Cosmological Geometry
+               RDG (Relational Dynamic Geometry) - Minimal Model
+================================================================================
+
+1. Core Geometry Operator
+   G Ψ = -∇²Ψ + μ Δρ(x) Ψ + ν û · ∇Ψ
+   where:
+     Δρ(x) = ρ₊(x) - ρ₋(x)          (relational density contrast)
+     τ(x)  = ρ₊(x) + ρ₋(x)          (total tension)
+     û     = preferred direction (Axis of Evil)
+
+   Lowest nontrivial eigenmode: G Ψ₀ = λ₀ Ψ₀
+   Boundary projection: M_{2,3}(n̂) = Ψ₀(χ_*, n̂)   ← Quadrupole-Octopole alignment
+
+2. Screening & Finite-Range Coupling
+   d_s(x) = d₀ exp[-α Δρ(x)/τ(x)]
+   
+   Relational propagator: G(d;x) = exp(-d / d_s(x))
+   
+   Angular coupling kernel on sky:
+   K(θ) = ∫ dχ W(χ) exp(-d(χ,θ) / d_s(χ,n̂))
+   → Hard cutoff at θ ≳ θ_s (explains lack of large-angle correlation)
+
+3. Low-ℓ Temperature Field
+   T(n̂) = T_iso(n̂) + A_Q M_{2,3}(n̂) + A_D d̂ · n̂
+
+   Fit A_Q, A_D, d̂ directly to observed a_{ℓm}^T (ℓ ≤ 30)
+
+4. Lensing Modulation (Closure)
+   ϕ(n̂) = ϕ_iso + β_Q M_{2,3}(n̂) + β_D d̂ · n̂
+   with β_Q = k_Q A_Q , β_D = k_D A_D   (k from propagator/screening)
+   
+   C_L^{ϕϕ}(n̂) = C_L^{ϕϕ,iso} [1 + α₁ Y_{1m}(n̂) + α₂ Y_{2m}(n̂)]
+   → α₁ ∝ k_D A_D , α₂ ∝ k_Q A_Q
+
+5. Cold Spot as ρ₋ Defect
+   Localized region D with Δρ(D) << 0 → shorter d_s, tension scar
+   Predicts: temperature depression + weak κ + subtle E/B modulation
+
+6. Consistency Constraints
+   |α₁|, |α₂| ≲ 0.01               (Planck lensing isotropy)
+   |ΔC_ℓ^{TT}/C_ℓ^{TT}| ≪ 0.01 for ℓ > 100   (high-ℓ isotropy)
+   |κ_D| small, |ΔEE|, |EB| small around Cold Spot
+
+================================================================================
+Compact Summary:
+Low-ℓ CMB = global Q-boundary mode M_{2,3}
+          + ∇(ρ₊/ρ₋) gradient
+          + spectral gap (missing long modes)
+          + Π-chiral spectrum
+          + D_ρ₋ defect (Cold Spot)
+
+All tied to single operator G and screening d_s(Δρ/τ).
+Fits low-ℓ T → predicts lensing α_{1,2} and high-ℓ residuals with no extra parameters.
+================================================================================
