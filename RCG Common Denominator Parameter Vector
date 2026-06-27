@@ -7,7 +7,7 @@ Data sets:
   • Planck low-ℓ TT          		→ constrains (A_Q, A_D, μ, ν, α, d₀)
   • Planck lensing φ         		→ constrains (k_Q, k_D, A_Q, A_D)
   • Planck EB/TB             		→ constrains (γ_Π, ε_Π, A_Q, axis û)
-  • Planck polarization maps 	  → cross-checks A_Q, A_D, γ_Π, ε_Π
+  • Planck polarization maps 	→ cross-checks A_Q, A_D, γ_Π, ε_Π
   • ACT/SPT lensing          		→ refines (k_Q, k_D, A_Q, A_D)
 
 Common denominator:
@@ -21,12 +21,12 @@ Core Parameter Set 𝒑
 
 How Each Dataset Constrains 𝒑
 
-Dataset				                Primary Constraints			          Secondary / Cross-checks
-Planck low-ℓ TT (ℓ≤30)		    A_Q, A_D, μ, ν, α, d₀, û			    Axis direction û
-Planck lensing (φ)		        k_Q, k_D, A_Q, A_D (via α₁, α₂)		Overall amplitude consistency
-Planck EB / TB			          γ_Π, ε_Π, A_Q, û			            Chiral strength & axis alignment
-Planck Polarization (EE, TE)	A_Q, A_D, γ_Π, ε_Π			          Consistency of low-ℓ modes	
-ACT / SPT lensing			        k_Q, k_D, A_Q, A_D  (note_0)		  Refines lensing modulation	
+Dataset				Primary Constraints			Secondary / Cross-checks
+Planck low-ℓ TT (ℓ≤30)		A_Q, A_D, μ, ν, α, d₀, û			Axis direction û
+Planck lensing (φ)		k_Q, k_D, A_Q, A_D (via α₁, α₂)		Overall amplitude consistency
+Planck EB / TB			γ_Π, ε_Π, A_Q, û			Chiral strength & axis alignment
+Planck Polarization (EE, TE)	A_Q, A_D, γ_Π, ε_Π			Consistency of low-ℓ modes	
+ACT / SPT lensing			k_Q, k_D, A_Q, A_D  (note_0)		Refines lensing modulation	
 
 Common Denominator Principle
 
