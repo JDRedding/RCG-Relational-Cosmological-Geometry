@@ -2,12 +2,6 @@
 
 A geometric-relational framework for the large-scale CMB anomalies  
 
-See `RCG THEORY MAP` for a compact ASCII diagram of the full RCG pipeline
-from relational densities to observables and predictions.
-
-See `RCG Common Denominator Parameter Vector` for the RCG Common Denominator Parameter (CDP) Vector
-and global vs hierarchical fitting strategy.
-
 ---
 Relational Cosmological Geometry (RCG) is a geometric‑relational framework in which cosmic structure, anisotropy, and boundary modes arise from the action of the operator 𝐺 on relational densities and from the screening functional 𝑑𝑠:(𝜌+,𝜌−)↦𝑅^+, which determines the finite‑range propagation of relational influence.
 
@@ -80,3 +74,11 @@ distinctive signature of RCG + chiral gravity.
 Low-ℓ CMB = global Q-boundary mode + ∇(ρ₊/ρ₋) + spectral gap + Π-chiral + D_ρ₋ defect
 
 All from single operator G and screening d_s(Δρ/τ). Fit low-ℓ T → predicts everything else with no extra parameters.
+
+---
+
+See `RCG THEORY MAP` for a compact ASCII diagram of the full RCG pipeline
+from relational densities to observables and predictions.
+
+See `RCG Common Denominator Parameter Vector` for the RCG Common Denominator Parameter (CDP) Vector
+and global vs hierarchical fitting strategy.
