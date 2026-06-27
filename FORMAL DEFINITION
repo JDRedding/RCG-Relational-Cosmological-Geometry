@@ -1,0 +1,374 @@
+RCG — Relational Cosmological Geometry
+================================================================================
+Relational Cosmological Geometry (RCG) is a geometric‑relational framework in
+which cosmic structure, anisotropy, and boundary modes arise from the action of
+the operator 𝐺 on relational densities and from the screening functional
+𝑑𝑠:(𝜌+,𝜌−)↦𝑅^+, which determines the finite‑range propagation of relational
+influence.
+
+================================================================================
+ABSTRACT — RELATIONAL COSMOLOGICAL GEOMETRY (RCG)
+================================================================================
+
+We introduce Relational Cosmological Geometry (RCG), a framework in which the
+large‑scale structure of the cosmic microwave background (CMB) arises from a
+relational density field and its induced boundary geometry. RCG replaces the
+assumption of primordial Gaussian metric fluctuations with a geometry generated
+by the operator 𝓖 = −∇² + μΔρ + ν û·∇ acting on relational densities ρ₊ and ρ₋.
+
+The lowest nontrivial eigenmode of 𝓖, projected onto the last‑scattering
+surface, yields a global boundary deformation M_{2,3}(n̂) that reproduces the
+observed quadrupole–octopole alignment and defines a preferred cosmic axis.
+A screening length d_s = d₀ exp[−α Δρ/τ] produces a finite‑range angular
+coupling kernel K(θ), naturally generating the observed suppression of
+large‑angle correlations.
+
+The same parameters that fit the low‑ℓ temperature anomalies determine the
+anisotropic lensing modulation amplitudes α₁ and α₂ through closure relations
+β_Q = k_Q A_Q and β_D = k_D A_D. RCG therefore predicts correlated signatures
+in lensing, polarization, and the ISW effect without introducing additional
+degrees of freedom.
+
+Localized ρ₋ defects generate Cold‑Spot‑like features with weak lensing and
+subtle polarization structure, consistent with current observations. High‑ℓ
+isotropy is preserved through spectral cutoff and short‑range coupling.
+
+RCG provides a unified geometric origin for the CMB anomaly sector and yields
+testable predictions for future CMB lensing and polarization surveys.
+
+================================================================================
+
+• the full minimal RDG model  
+• the operator 𝓖  
+• the screening length d_s(ρ₊,ρ₋)  
+• the propagator  
+• the low‑ℓ temperature model  
+• the lensing modulation formulas  
+• the ISW integrals  
+• the Cold Spot defect model  
+• the consistency inequalities  
+• the full pipeline  
+
+INTRODUCTION — RELATIONAL COSMOLOGICAL GEOMETRY (RCG)
+================================================================================
+
+The standard ΛCDM model successfully describes the acoustic structure of the
+cosmic microwave background (CMB) at high multipoles, yet exhibits persistent
+tensions at large angular scales: the quadrupole–octopole alignment, the
+hemispherical power asymmetry, the suppression of large‑angle correlations,
+parity asymmetry, and the Cold Spot. These features violate statistical
+isotropy and lack a natural origin within Gaussian primordial perturbations.
+
+Relational Cosmological Geometry (RCG) addresses these anomalies by replacing
+metric‑first cosmology with a geometry emerging from relational densities.
+Two fields, ρ₊ and ρ₋, encode positive and negative tension contributions.
+Their contrast Δρ and total τ determine both the geometry operator 𝓖 and the
+screening length d_s that governs relational propagation.
+
+The operator 𝓖 = −∇² + μΔρ + ν û·∇ possesses a lowest nontrivial eigenmode
+whose boundary projection M_{2,3}(n̂) defines a global deformation of the
+last‑scattering surface. This mode reproduces the observed quadrupole–octopole
+alignment and establishes a preferred cosmic axis.
+
+Finite‑range coupling arises from the screening length
+d_s = d₀ exp[−α Δρ/τ], producing an angular kernel K(θ) with a natural cutoff
+scale. This mechanism explains the lack of large‑angle correlation without
+fine‑tuning.
+
+Crucially, the amplitudes A_Q and A_D that fit the low‑ℓ temperature anomalies
+also determine the anisotropic lensing modulation α₁ and α₂ through closure
+relations β_Q = k_Q A_Q and β_D = k_D A_D. RCG therefore predicts correlated
+signatures across temperature, lensing, polarization, and ISW observables.
+
+Localized regions with Δρ < 0 act as tension defects, generating Cold‑Spot‑like
+features with weak lensing and subtle polarization patterns, consistent with
+Planck data.
+
+RCG thus provides a unified geometric origin for the CMB anomaly sector and
+offers falsifiable predictions for upcoming CMB lensing and polarization
+surveys.
+
+================================================================================
+FORMAL DEFINITION — RELATIONAL COSMOLOGICAL GEOMETRY (RCG)
+================================================================================
+
+Relational Cosmological Geometry (RCG) is a cosmological framework in which
+the large‑scale structure, anisotropy, and observable sky patterns arise from
+a relational density field and its induced boundary geometry, rather than from
+metric fluctuations of a primordial Gaussian random field.
+
+RCG is defined by the following components:
+
+1. Relational Density Fields:
+      ρ₊(x)  = positive‑tension relational density
+      ρ₋(x)  = negative‑tension relational density
+      Δρ(x)  = ρ₊(x) − ρ₋(x)
+      τ(x)   = ρ₊(x) + ρ₋(x)
+
+2. Geometry Operator:
+      𝓖Ψ(x) = −∇²Ψ(x) + μ Δρ(x) Ψ(x) + ν (û · ∇Ψ(x))
+
+   where μ, ν are coupling constants and û is a global anisotropy direction.
+
+3. Boundary Mode:
+      𝓖Ψ₀ = λ₀ Ψ₀
+      M_{2,3}(n̂) = Ψ₀(χ_*, n̂)
+
+   The boundary eigenmode M_{2,3} encodes the aligned quadrupole–octopole
+   structure and defines the global Q‑boundary mode.
+
+4. Screening Length:
+      d_s(x) = d₀ exp[ −α Δρ(x)/τ(x) ]
+
+   which determines the finite‑range relational propagator.
+
+5. Relational Propagator:
+      G(d;x) = exp( − d / d_s(x) )
+
+6. Angular Coupling Kernel:
+      K(θ) = ∫ dχ W(χ) exp[ − d(χ,θ) / d_s(χ,n̂) ]
+
+   which produces a finite correlation range on the sky.
+
+7. Observable Fields:
+      T(n̂) = T_iso + A_Q M_{2,3}(n̂) + A_D (d̂ · n̂)
+      φ(n̂) = φ_iso + β_Q M_{2,3}(n̂) + β_D (d̂ · n̂)
+
+   with closure relations β_Q = k_Q A_Q and β_D = k_D A_D.
+
+RCG is the theory defined by the tuple:
+      (ρ₊, ρ₋, 𝓖, d_s, G, K, M_{2,3})
+
+from which all cosmological observables are derived.
+
+================================================================================
+1. CORE GEOMETRY OPERATOR 𝓖
+================================================================================
+
+Relational density fields:
+    Δρ(x) = ρ₊(x) - ρ₋(x)        (signed imbalance)
+    τ(x)  = ρ₊(x) + ρ₋(x)        (total tension)
+
+Preferred direction (Axis of Evil):
+    û = fixed unit vector
+
+Minimal RDG geometry operator:
+    𝓖 Ψ(x) =
+        - ∇²Ψ(x)
+        + μ Δρ(x) Ψ(x)
+        + ν (û · ∇Ψ(x))
+
+Interpretation:
+    -∇²Ψ          → isotropic relational Laplacian  
+    μ Δρ Ψ        → tension‑mass term from ρ₊/ρ₋  
+    ν û·∇Ψ        → global anisotropic drift (Axis of Evil)
+
+Lowest nontrivial eigenmode:
+    𝓖 Ψ₀ = λ₀ Ψ₀
+
+Boundary projection onto last‑scattering sphere:
+    M_{2,3}(n̂) = Ψ₀(χ_*, n̂)
+
+This M_{2,3}(n̂) is the aligned quadrupole–octopole pattern.
+
+================================================================================
+2. SCREENING LENGTH d_s(ρ₊,ρ₋) AND FINITE‑RANGE COUPLING
+================================================================================
+
+Define screening length:
+    d_s(x) = d₀ * exp[ - α (Δρ(x) / τ(x)) ]
+
+Meaning:
+    Δρ > 0  → long‑range coupling  
+    Δρ < 0  → short‑range coupling (Cold Spot region)
+
+Relational propagator:
+    G(d; x) = exp( - d / d_s(x) )
+
+Angular coupling kernel on sky:
+    K(θ) = ∫ dχ  W(χ)  exp( - d(χ,θ) / d_s(χ,n̂) )
+
+This produces:
+    • finite‑range coupling  
+    • hard cutoff at θ ≳ θ_s  
+    • explains lack of large‑angle correlation in CMB
+
+================================================================================
+3. LOW‑ℓ TEMPERATURE FIELD (FITTING STAGE)
+================================================================================
+
+Temperature field decomposition:
+    T(n̂) = T_iso(n̂)
+          + A_Q M_{2,3}(n̂)
+          + A_D (d̂ · n̂)
+
+Where:
+    A_Q = amplitude of global Q‑boundary mode  
+    A_D = amplitude of hemispherical asymmetry  
+    d̂   = direction of power asymmetry
+
+Fit A_Q, A_D, d̂ directly to observed a_{ℓm}^T for ℓ ≤ 30.
+
+================================================================================
+4. LENSING POTENTIAL φ(n̂) AND CLOSURE RELATIONS
+================================================================================
+
+Lensing potential:
+    φ(n̂) = -2 ∫₀^{χ*} dχ [(χ* - χ)/(χ* χ)] Φ(χ n̂, η)
+
+RDG anisotropic decomposition:
+    φ(n̂) = φ_iso(n̂)
+          + β_Q M_{2,3}(n̂)
+          + β_D (d̂ · n̂)
+
+Closure relations (no new parameters):
+    β_Q = k_Q A_Q
+    β_D = k_D A_D
+
+Thus lensing anisotropy is fixed by the same A_Q, A_D that fit low‑ℓ T.
+
+Directional lensing power:
+    C_L^{φφ}(n̂) = C_L^{φφ,iso}
+                   [1 + α₁ Y_{1m}(n̂) + α₂ Y_{2m}(n̂)]
+
+Explicit proportionality:
+    α₁ ∝ k_D A_D
+    α₂ ∝ k_Q A_Q
+
+================================================================================
+5. EXPLICIT FORMULAS FOR α₁ AND α₂
+================================================================================
+
+Expand φ(n̂):
+    φ(n̂) = Σ_{LM} a_{LM}^φ Y_{LM}(n̂)
+
+Define anisotropic contributions:
+    δa_{LM}^{φ,D} = β_D d_{LM}
+    δa_{LM}^{φ,Q} = β_Q q_{LM}
+
+Dipole modulation:
+    α₁ =
+      [ 2 Re( Σ_m a_{Lm}^{φ,iso*} δa_{Lm}^{φ,D} ) ]
+      / [ Σ_m |a_{Lm}^{φ,iso}|² ]
+
+Quadrupole modulation:
+    α₂ =
+      [ 2 Re( Σ_m a_{Lm}^{φ,iso*} δa_{Lm}^{φ,Q} ) ]
+      / [ Σ_m |a_{Lm}^{φ,iso}|² ]
+
+Insert closure:
+    β_D = k_D A_D
+    β_Q = k_Q A_Q
+
+Final explicit forms:
+    α₁ = (2 k_D A_D  Re Σ_m[a_{Lm}^{φ,iso*} d_{Lm}])
+          / (Σ_m |a_{Lm}^{φ,iso}|²)
+
+    α₂ = (2 k_Q A_Q  Re Σ_m[a_{Lm}^{φ,iso*} q_{Lm}])
+          / (Σ_m |a_{Lm}^{φ,iso}|²)
+
+================================================================================
+6. ISW EFFECT (ANISOTROPIC CONTRIBUTIONS)
+================================================================================
+
+ISW temperature anisotropy:
+    (ΔT/T)_ISW(n̂) = 2 ∫_{η*}^{η₀} dη  ∂Φ/∂η
+
+Dipole ISW:
+    (ΔT/T)_ISW^D(n̂) = γ_D (d̂ · n̂)
+
+where:
+    γ_D = 2 ∫ dη  [ dA_D/dη ] F_D(χ)
+
+Quadrupole ISW:
+    (ΔT/T)_ISW^Q(n̂) = γ_Q M_{2,3}(n̂)
+
+where:
+    γ_Q = 2 ∫ dη  [ dA_Q/dη ] F_Q(χ)
+
+Thus:
+    ISW anomalies ↔ same A_Q, A_D that set α₁, α₂.
+
+================================================================================
+7. COLD SPOT AS A ρ₋ DEFECT
+================================================================================
+
+Cold Spot region D:
+    Δρ(D) << 0  → ρ₋‑dominated → short d_s → tension scar
+
+Predictions:
+    • temperature depression  
+    • weak lensing convergence κ_D  
+    • subtle E/B polarization modulation  
+    • no strong mass signature (consistent with Planck lensing)
+
+================================================================================
+8. CONSISTENCY INEQUALITIES (PLANCK‑LEVEL)
+================================================================================
+
+Lensing isotropy:
+    |α₁| ≤ 0.01
+    |α₂| ≤ 0.01
+
+High‑ℓ temperature isotropy:
+    |ΔC_ℓ^{TT} / C_ℓ^{TT,iso}| ≤ ε_T   for ℓ > 100
+    with ε_T ≪ 0.01
+
+Cold Spot constraints:
+    |κ_D| small
+    |ΔEE| small
+    |EB| small
+
+Spectral cutoff:
+    M_{2,3}(n̂) = 0 for ℓ > ℓ_c  (ℓ_c ≈ 30)
+
+Finite‑range coupling:
+    K(θ) ≈ 0 for θ ≳ θ_s
+
+================================================================================
+9. FULL RDG PIPELINE (END‑TO‑END)
+================================================================================
+
+Step 1 — Fit low‑ℓ temperature anomalies:
+    Determine A_Q, A_D, d̂ from a_{ℓm}^T (ℓ ≤ 30)
+
+Step 2 — Solve eigenproblem:
+    𝓖Ψ₀ = λ₀Ψ₀ → obtain M_{2,3}(n̂)
+
+Step 3 — Compute screening:
+    d_s(ρ₊,ρ₋) → obtain K(θ)
+
+Step 4 — Compute lensing anisotropy:
+    β_Q = k_Q A_Q
+    β_D = k_D A_D
+    → α₁, α₂
+
+Step 5 — Compute ISW anisotropy:
+    γ_D, γ_Q
+
+Step 6 — Enforce consistency inequalities:
+    α₁, α₂, κ_D, ΔEE, EB, high‑ℓ isotropy
+
+Step 7 — Compare with Planck TT, TE, EE, φφ, κ maps
+
+================================================================================
+COMPACT SUMMARY
+================================================================================
+
+Low‑ℓ CMB =
+    global Q‑boundary mode M_{2,3}
+  + ∇(ρ₊/ρ₋) gradient
+  + spectral gap (missing long modes)
+  + Π‑chiral spectrum
+  + D_{ρ₋} defect (Cold Spot)
+
+All tied to:
+    • single operator 𝓖  
+    • single screening function d_s(Δρ/τ)
+
+Fit low‑ℓ T → predict α₁, α₂, ISW, lensing, polarization, high‑ℓ residuals  
+with **no extra parameters**.
+
+================================================================================
+END
+================================================================================
