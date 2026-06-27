@@ -1,0 +1,36 @@
+CHIRAL ISW CONTRIBUTION 
+========================
+
+Total ISW:
+    (ΔT/T)_ISW( n^ ) = 2 ∫_{η_*}^{η_0} (∂Φ / ∂η) dη   | along ray n^
+
+Decompose potential:
+    Φ(χ n^, η) = Φ_iso(χ n^, η)
+               + Φ_aniso(χ n^, η)
+               + Φ_chiral(χ n^, η)
+
+Standard anisotropic part (RCG):
+    Φ_aniso(χ n^, η) =
+        β_Q(η) M_{2,3}(n^)
+      + β_D(η) (d^ · n^)
+
+Chiral extension:
+    Φ_chiral(χ n^, η) =
+        β_Π(η) Π M_{2,3}(n^)
+
+    where:
+        Π = parity-odd boundary operator
+        β_Π(η) = chiral amplitude evolution
+
+Chiral ISW temperature anisotropy:
+    (ΔT/T)_ISW^Π( n^ ) =
+        2 ∫_{η_*}^{η_0}
+            [ ∂β_Π(η)/∂η ] F_Π(χ(η)) Π M_{2,3}(n^) dη
+
+Define chiral ISW amplitude:
+    γ_Π =
+        2 ∫_{η_*}^{η_0}
+            [ ∂β_Π(η)/∂η ] F_Π(χ(η)) dη
+
+Then:
+    (ΔT/T)_ISW^Π( n^ ) = γ_Π Π M_{2,3}(n^)
