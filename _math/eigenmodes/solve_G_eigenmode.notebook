@@ -1,1 +1,26 @@
+# Solve lowest eigenmode of G on a sphere
+
+import numpy as np
+from scipy.sparse import diags
+from scipy.sparse.linalg import eigsh
+
+# 1. Define grid
+N = 256
+theta = np.linspace(0, np.pi, N)
+phi   = np.linspace(0, 2*np.pi, N)
+
+# 2. Define Δρ and τ profiles
+Delta_rho = ...
+tau       = ...
+
+# 3. Build operator G
+# G = -∇² + μ Δρ + ν (u · ∇)
+G_matrix = build_G(theta, phi, Delta_rho, tau, mu, nu, u_hat)
+
+# 4. Solve lowest nontrivial eigenmode
+vals, vecs = eigsh(G_matrix, k=2, which='SM')
+Psi0 = vecs[:,1].reshape(N, N)
+
+# 5. Boundary projection
+M23 = Psi0_at_chi_star(Psi0)
 
