@@ -2,9 +2,7 @@
 Quantitative, falsifiable targets derived from the RCG anomaly sector,
 Q-boundary mode, screening geometry, and chiral extension.
 
-============================================================
 1. LOW-ℓ TEMPERATURE (ℓ ≤ 30)
-============================================================
 
 Observable:
     Quadrupole–octopole alignment (Q–O alignment)
@@ -22,10 +20,7 @@ Pass/Fail:
     • FAIL if Δθ_QO > 15°
     • PASS if Δθ_QO < 10° and axis matches û within 10°
 
-
-============================================================
 2. LARGE-ANGLE CORRELATION SUPPRESSION
-============================================================
 
 Observable:
     C(θ) for θ > 60°
@@ -43,10 +38,7 @@ Pass/Fail:
     • FAIL if |C(θ > 60°)| > 1 × 10⁻⁴
     • PASS if |C(θ > 60°)| < 5 × 10⁻⁵
 
-
-============================================================
 3. ANISOTROPIC LENSING (α₁, α₂)
-============================================================
 
 Definitions:
     α₁ = dipole lensing modulation
@@ -70,10 +62,7 @@ Pass/Fail:
     • FAIL if |α₁|, |α₂| > 0.01  (too large)
     • PASS if 0.002–0.008 and aligned with û
 
-
-============================================================
 4. PARITY-ODD SPECTRA (TB, EB)
-============================================================
 
 RCG + Chiral Gravity Prediction:
     • TB and EB localized at ℓ = 2–3
@@ -94,9 +83,7 @@ Pass/Fail:
     • PASS if TB/EB detected at ℓ = 2–3 with correct axis
 
 
-============================================================
 5. CHIRAL ISW AMPLITUDE (γ_Π)
-============================================================
 
 RCG Prediction:
     γ_Π = 2 ∫ (∂β_Π/∂η) F_Π dη
@@ -112,10 +99,7 @@ Pass/Fail:
     • FAIL if |γ_Π| > 10⁻² (too large for Planck bounds)
     • PASS if (1–5) × 10⁻³
 
-
-============================================================
 6. COLD SPOT SIGNATURE
-============================================================
 
 RCG Prediction:
     • ρ₋ defect → tension scar
@@ -134,9 +118,7 @@ Pass/Fail:
     • PASS if κ_D < 0.005 and no mass overdensity
 
 
-============================================================
 7. HIGH-ℓ ISOTROPY
-============================================================
 
 RCG Prediction:
     • High-ℓ TT, TE, EE remain ΛCDM-like
@@ -152,9 +134,7 @@ Pass/Fail:
     • PASS if deviations < 0.5%
 
 
-============================================================
 8. MASTER SIGNATURE: AXIS ALIGNMENT
-============================================================
 
 Across all observables (T, φ, TB/EB, ISW), RCG predicts:
 
@@ -167,9 +147,7 @@ Pass/Fail:
     • PASS if all axes agree within 10°
 
 
-============================================================
 9. SUMMARY OF FALSIFIABLE TARGETS
-============================================================
 
 RCG is falsified if ANY of the following occur:
 
