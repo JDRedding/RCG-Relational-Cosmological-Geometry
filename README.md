@@ -35,7 +35,32 @@ Relational Cosmological Geometry (RCG) replaces primordial Gaussian metric fluct
    C_ℓ^{TB} = (1/(2ℓ+1)) Σ_m Re[ a_{ℓm}^{T,Π} (a_{ℓm}^{B,Π})* ]
    C_ℓ^{EB} = (1/(2ℓ+1)) Σ_m Re[ a_{ℓm}^{E} (a_{ℓm}^{B,Π})* ]
 
-6. Cold Spot
+### Low-ℓ Scaling of Parity-Odd Spectra
+
+In the chiral extension of RCG, the parity-odd spectra TB and EB inherit the
+spectral structure of the Q-boundary mode M_{2,3}. Because Π M_{2,3} has support
+only at ℓ = 2–3 and is suppressed for ℓ > 30, the predicted parity-odd spectra
+exhibit:
+
+• a sharp peak at ℓ = 2–3  
+• rapid fall-off for ℓ > 30  
+• amplitude proportional to γ_Π ε_Π and tied to A_Q via boundary dynamics  
+
+Thus TB/EB at low ℓ are a chiral echo of the quadrupole–octopole alignment.
+
+   ### Planck Constraints
+
+Planck finds TB = EB = 0 within uncertainties, with only a small birefringence
+signal (β ≈ 0.3°). This imposes strong bounds on the chiral parameters:
+
+• |γ_Π ε_Π| must be small enough to keep TB/EB below Planck limits  
+• strongest constraints occur at ℓ = 2–3  
+• any real TB/EB signal must align with the Axis of Evil / M_{2,3}  
+
+ΛCDM predicts no such axis-aligned TB/EB. Detection of this pattern would be a
+distinctive signature of RCG + chiral gravity.
+
+7. Cold Spot
    Localized ρ₋ defect → tension scar
 
 ## Full Pipeline
