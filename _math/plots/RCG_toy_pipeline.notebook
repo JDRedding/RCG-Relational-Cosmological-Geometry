@@ -1,0 +1,71 @@
+# How to run: bash
+# pip install healpy matplotlib numpy
+# python rcg_toy_model.py
+
+import numpy as np
+import healpy as hp
+import matplotlib.pyplot as plt
+
+# ========================= RCG Minimal Toy Model =========================
+# Demonstrates the full pipeline with a simple Δρ profile
+
+NSIDE = 32
+npix = hp.nside2npix(NSIDE)
+
+# --------------------- 1. Define relational density field ---------------------
+theta, phi = hp.pix2ang(NSIDE, np.arange(npix))
+
+# Simple toy Δρ: dipole + localized Cold Spot defect
+delta_rho = 0.8 * np.cos(theta)                               # global dipole (hemispherical asymmetry)
+cold_spot_lat = np.deg2rad(-55)                               # Cold Spot approximate location
+cold_spot_lon = np.deg2rad(210)
+dist_to_cs = np.arccos(np.sin(theta)*np.sin(cold_spot_lat) +
+                       np.cos(theta)*np.cos(cold_spot_lat)*np.cos(phi - cold_spot_lon))
+delta_rho -= 1.2 * np.exp(- (dist_to_cs / 0.3)**2)           # ρ₋ defect
+
+tau = 1.0 + 0.1 * np.abs(delta_rho)                          # total tension
+
+# --------------------- 2. Geometry Operator parameters ---------------------
+mu = 0.6
+nu = 0.8
+u_theta = np.deg2rad(90 - 130)   # Axis of Evil direction (approx)
+u_phi   = np.deg2rad(260)
+u_vec = np.array([np.sin(u_theta)*np.cos(u_phi),
+                  np.sin(u_theta)*np.sin(u_phi),
+                  np.cos(u_theta)])
+
+# --------------------- 3. Toy M_{2,3} boundary mode ---------------------
+# Approximate aligned quadrupole + octopole
+cos_gamma = (np.sin(theta) * np.sin(u_theta) * np.cos(phi - u_phi) +
+             np.cos(theta) * np.cos(u_theta))
+
+M23 = 0.7 * (3*cos_gamma**2 - 1) + 0.4 * (5*cos_gamma**3 - 3*cos_gamma)
+M23 /= np.std(M23)
+
+# --------------------- 4. Screening length d_s ---------------------
+alpha = 1.2
+d0 = 0.8
+d_s = d0 * np.exp(-alpha * delta_rho / tau)
+
+# --------------------- 5. Fit amplitudes (toy) ---------------------
+A_Q = 1.0          # Global boundary mode amplitude
+A_D = 0.9          # Hemispherical gradient amplitude
+
+# --------------------- 6. Lensing modulation (closure) ---------------------
+k_Q = 0.45         # transfer coefficients (from dynamics)
+k_D = 0.55
+alpha1 = k_D * A_D   # dipole modulation
+alpha2 = k_Q * A_Q   # quadrupole modulation
+
+print("=== RCG Toy Model Output ===")
+print(f"α₁ (dipole lensing)  = {alpha1:.3f}")
+print(f"α₂ (quad lensing)    = {alpha2:.3f}")
+print(f"Screening range θ_s  ≈ {np.rad2deg(np.mean(d_s)):.1f}°")
+print(f"Axis direction       ≈ (l,b) = (260°, 130°)")
+
+# --------------------- Visualization ---------------------
+hp.mollview(M23, title="RCG Q-Boundary Mode M_{2,3}(n̂)", cmap='RdBu_r', min=-2.5, max=2.5)
+plt.show()
+
+hp.mollview(delta_rho, title="Toy Δρ field (dipole + Cold Spot defect)", cmap='RdBu_r')
+plt.show()
