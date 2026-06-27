@@ -1,0 +1,49 @@
+RCG Common Denominator Parameter Vector
+
+All major datasets constrain overlapping subsets of the same underlying parameter vector.
+A highly constrained system with strong cross-predictions and clear falsification criteria.
+
+Data sets:
+  • Planck low-ℓ TT          		→ constrains (A_Q, A_D, μ, ν, α, d₀)
+  • Planck lensing φ         		→ constrains (k_Q, k_D, A_Q, A_D)
+  • Planck EB/TB             		→ constrains (γ_Π, ε_Π, A_Q, axis û)
+  • Planck polarization maps 	→ cross-checks A_Q, A_D, γ_Π, ε_Π
+  • ACT/SPT lensing          		→ refines (k_Q, k_D, A_Q, A_D)
+
+Common denominator:
+  All these observables are different functions of the same
+  parameter vector 𝒑, so a single global fit/likelihood over 𝒑
+  can be constrained simultaneously by all of them.
+
+Core Parameter Set 𝒑
+
+𝒑 = { μ, ν, α, d₀, A_Q, A_D, û, k_Q, k_D, γ_Π, ε_Π }
+
+How Each Dataset Constrains 𝒑
+
+Dataset				Primary Constraints			Secondary / Cross-checks
+Planck low-ℓ TT (ℓ≤30)		A_Q, A_D, μ, ν, α, d₀, û			Axis direction û
+Planck lensing (φ)		k_Q, k_D, A_Q, A_D (via α₁, α₂)		Overall amplitude consistency
+Planck EB / TB			γ_Π, ε_Π, A_Q, û			Chiral strength & axis alignment
+Planck Polarization (EE, TE)	A_Q, A_D, γ_Π, ε_Π			Consistency of low-ℓ modes	
+ACT / SPT lensing			k_Q, k_D, A_Q, A_D  (note_0)		Refines lensing modulation	
+
+Common Denominator Principle
+
+All observables are different transfer functions of the same
+underlying structures: Δρ, M_{2,3}, K(θ), Π.
+
+Therefore a single global likelihood can be written:
+
+    L(𝒑) = L_TT(𝒑) × L_ϕ(𝒑) × L_TB/EB(𝒑) × L_pol(𝒑) × L_ACT/SPT(𝒑)
+
+Key advantage:
+
+  • Parameters are tightly cross-linked, not independent.
+  • A_Q, A_D set low-ℓ TT, then fix α₁, α₂ via (k_Q, k_D),
+    and feed TB/EB via (γ_Π, ε_Π), all with the same axis û.
+
+---
+Note_0: higher resolution
+
+
